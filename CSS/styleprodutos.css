@@ -1,0 +1,92 @@
+/* ------------------- BG ------------------- */
+
+.introdução_produtos {
+  background: url("../img/fotos/bg-produto.jpg") no-repeat center;
+  background-size: cover;
+}
+
+/* ------------------- Produto ------------------- */
+
+.produto_item {
+  padding-top: 60px;
+}
+
+.img_maior img {
+  margin-left: -5px;
+}
+
+.produto_item h2 {
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  position: relative;
+  top: -180px;
+  text-align: center;
+  margin-bottom: -56px;
+}
+
+.produto_item h2:before,
+.produto_item h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 8px auto;
+}
+
+.produto_icone {
+  background: black;
+  padding: 70px 0;
+}
+.produto_icone img {
+  margin: 0 auto;
+}
+
+.produto_info {
+  background: black;
+}
+
+.produto_info p {
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  height: 180px;
+  padding: 30px 40px;
+}
+
+.produto_info ul li {
+  background: #fec63e;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  float: left;
+  text-align: center;
+  width: 229px;
+  height: 49px;
+  padding-top: 16px;
+}
+
+.produto_info ul li:nth-child(1) {
+  margin-bottom: 2px;
+}
+.produto_info ul li:nth-child(2) {
+  margin-bottom: 2px;
+}
+
+.produto_info ul li:nth-child(even) {
+  margin-left: 2px;
+}
+
+/* ------------------- Orçamento ------------------- */
+
+.orcamento .subtitulo {
+  color: #fec63e;
+}
+
+.orcamento .subtitulo:after {
+  background-color: #fec63e;
+}

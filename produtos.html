@@ -111,7 +111,7 @@
     <section class="orcamento">
       <div class="container">
         <h2 class="subtitulo">Orçamento</h2>
-        <form id="form_orcamento">
+        <form id="form_orcamento" class="grid-8 form">
           <label for="nome">Nome</label>
           <input type="text" id="nome">
           <label for="email">E-mail</label>
@@ -120,15 +120,22 @@
           <input type="text" id="telefone">
           <label for="espec">Especificações</label>
           <textarea id="espec"></textarea>
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn">Enviar</button>
         </form>
-        <div class="orcamentos_dados">
+
+        <div class="orcamentos_dados grid-8">
           <h3>dados</h3>
           <span>+55 21 99999-9999</span>
-          <span>contato@bikcraft.com</span>
+          <span class="dados_email">contato@bikcraft.com</span>
           <h3>monte a usa bikcraft</h3>
           <p>Escolha as especificações</p>
-          
+          <ul>
+            <li>Cores</li>
+            <li>Estilo</li>
+            <li>Medidas</li>
+            <li>Acessórios</li>
+            <li>E outros</li>
+          </ul>
         </div>
       </div>
     </section>

@@ -82,6 +82,12 @@
 }
 
 /* ------------------- Orçamento ------------------- */
+.orcamento {
+  background: black;
+  width: 100%;
+  margin-top: 60px;
+  padding: 40px 0;
+}
 
 .orcamento .subtitulo {
   color: #fec63e;
@@ -89,4 +95,90 @@
 
 .orcamento .subtitulo:after {
   background-color: #fec63e;
+}
+
+.form {
+  padding-right: 60px;
+}
+
+.form label {
+  display: block;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  background: none;
+  color: white;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 4px solid #fec63e;
+  background: none;
+  color: white;
+  padding: 7px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form button {
+  background: none;
+  padding: 7px 40px;
+}
+
+.orcamentos_dados {
+  color: #fff;
+}
+
+.orcamentos_dados h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+}
+
+.orcamentos_dados span {
+  display: block;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 30px;
+}
+
+.dados_email {
+  margin-bottom: 40px;
+}
+
+.orcamentos_dados ul {
+  padding-right: 60px;
+}
+
+.orcamentos_dados ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.orcamentos_dados ul li:nth-child(odd) {
+  background: #292929;
+}
+
+.orcamentos_dados p {
+  margin: 8px 0;
 }

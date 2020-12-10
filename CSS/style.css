@@ -12,6 +12,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .btn {
@@ -187,7 +188,7 @@ img {
 }
 
 .produtos_lista h3 {
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
@@ -255,7 +256,7 @@ img {
   padding: 60px 0px;
 }
 
-.qualidade::after {
+.qualidade:after {
   content: "";
   width: 634px;
   height: 83px;

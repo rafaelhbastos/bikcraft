@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/styleportifolio.css">
     <link rel="stylesheet" href="CSS/responsivo.css">
+    <script> document.documentElement.classList.add("js");</script>
   </head>
 
   <body>
@@ -34,18 +35,32 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" data-slide="quote">
       <blockquote class="quote_clientes">
-        <p>"Ut nunc erat, sodales vel bibendum quis, semper at ante. Maecenas et elit sit amet risus suscipit dapibus. Phasellus pharetra molestie maximus."</p>
-        <cite>Somebody</cite>
+        <p>"Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo."</p>
+        <cite>Barbara Moss</cite>
+      </blockquote>
+      <blockquote class="quote_clientes">
+        <p>"Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão perdendo. A precisão é absurda e a velocidade transcendental. Nunca vida nada igual."</p>
+        <cite>Bernardo</cite>
+      </blockquote>
+      <blockquote class="quote_clientes">  
+        <p>"Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a minha companheira mais fiel, nunca me traiu e está sempre a minha disposição."</p>
+        <cite>Jonhy Rato</cite>
       </blockquote>
     </section>
 
     <section class="portifolio">
-      <div class="container"> 
+      <div class="container" data-slide="portifolio"> 
         <ul class="lista_portifolio">
           <li class="grid-8"><img src="img/fotos/retro-home.jpg" alt="Retro Portifólio"></li>
           <li class="grid-8"><img src="img/fotos/passeio-home.jpg" alt="Passeio Portifólio"></li>
+          <li class="grid-16"><img src="img/fotos/esporte-home.jpg" alt="Esporte Portifólio"></li>
+        </ul>
+
+        <ul class="lista_portifolio">
+          <li class="grid-8"><img src="img/fotos/passeio-home.jpg" alt="Passeio Portifólio"></li>
+          <li class="grid-8"><img src="img/fotos/retro-home.jpg" alt="Retro Portifólio"></li>
           <li class="grid-16"><img src="img/fotos/esporte-home.jpg" alt="Esporte Portifólio"></li>
         </ul>
       </div>
@@ -93,6 +108,9 @@
          </div>
         </div>
       </footer>
+
+      <script src="./JS/script.js"></script>
+      <script src="./JS/simple-slide.js"></script>
 
   </body>
 </html>

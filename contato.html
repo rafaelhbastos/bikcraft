@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/grid.css">
+    <title>Bikcraft - Contato - (21) 99999-9999</title>
+    <meta name="description" content="Compre sua bicicleta personalizada na Bikcraft, Possuímos modelos Passeio, Retrô e Esporte.">
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bikcraft - Contato - (21) 99999-9999"/>
+    <meta property="og:description" content="Contate-nos e faça seu orçamento, escolhendo sua bicicleta da forma como preferir."/>
+    <meta property="og:url" content="http://bikcraft.com"/>
+    <meta property="og:image" content="http://bikcraft.com/img/og-image.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/stylecontato.css">
-    <link rel="stylesheet" href="CSS/responsivo.css">
     <script> document.documentElement.classList.add("js");</script>
   </head>
 
@@ -17,7 +25,7 @@
         <a href="index.html" class="grid-4">
           <img src="img/logo/bikcraft.svg" alt="bikecraft">
         </a>
-        <nav class="header_menu" class="grid-12">
+        <nav class="header_menu grid-12">
           <ul>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="produtos.html">Produtos</a></li>
@@ -35,21 +43,25 @@
       </div>
     </section>
 
-    <section class="orcamento">
+    <section class="orcamento_contato">
       <div class="container fadeInDown" data-anime="600">
-          <form id="form_orcamento" class="grid-8 form_contato">
+          <form id="form_orcamento" method='POST' action="./enviar.php" class="grid-8 form_contato formphp">
             <label for="nome">Nome</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" name="nome" required>
             <label for="email">E-mail</label>
-            <input type="text" id="email">
+            <input type="email" id="email" name="email" required>
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone">
-            <label for="espec">Especificações</label>
-            <textarea id="espec"></textarea>
-            <button type="submit" class="btn btn_preto">Enviar</button>
+            <input type="text" id="telefone" name="telefone">
+            <label class="nao-aparece">If you are not a robot, leave it blank</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">If you are not a robot, don't change this field</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
+            <label for="mensagem">Especificações</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="Enviar" name="enviar"  type="submit" class="btn btn_preto">Enviar</button>
           </form>
 
-          <div class="orcamentos_dados grid-8">
+          <div class="orcamentos_dados_contato grid-8">
             <h3>dados</h3>
             <span>+55 21 99999-9999</span>
             <span>contato@bikcraft.com</span>
@@ -59,9 +71,9 @@
             <div class="redes">
               <h3>redes sociais</h3>
               <ul>
-                <li><a href="http://facebook.com" target="_blank"><img src="img/sociais/facebook.svg" alt=""></a></li>
-                <li><a href="http://instagram.com" target="_blank"><img src="img/sociais/instagram.svg" alt=""></a></li>
-                <li><a href="http://twitter.com" target="_blank"><img src="img/sociais/twitter.svg" alt=""></a></li>
+                <li><a href="http://facebook.com" target="_blank"><img src="img/sociais/facebook.svg" alt="Facebook bikcraft"></a></li>
+                <li><a href="http://instagram.com" target="_blank"><img src="img/sociais/instagram.svg" alt="instagram bikcraft"></a></li>
+                <li><a href="http://twitter.com" target="_blank"><img src="img/sociais/twitter.svg" alt="Twitter bikcraft"></a></li>
               </ul>
             </div>
           </div>
@@ -90,9 +102,9 @@
           <div class="grid-4 footer_redes">
             <h3 class="subtitulo">redes sociais</h3>
               <ul>
-                <li><a href="http://facebook.com" target="_blank"><img src="img/sociais/facebook.svg" alt=""></a></li>
-                <li><a href="http://instagram.com" target="_blank"><img src="img/sociais/instagram.svg" alt=""></a></li>
-                <li><a href="http://twitter.com" target="_blank"><img src="img/sociais/twitter.svg" alt=""></a></li>
+                <li><a href="http://facebook.com" target="_blank"><img src="img/sociais/facebook.svg" alt="Facebook bikcraft"></a></li>
+                <li><a href="http://instagram.com" target="_blank"><img src="img/sociais/instagram.svg" alt="instagram bikcraft"></a></li>
+                <li><a href="http://twitter.com" target="_blank"><img src="img/sociais/twitter.svg" alt="Twitter bikcraft"></a></li>
              </ul>
           </div>
         </div>
@@ -107,6 +119,7 @@
     </footer>
 
     <script type="text/javascript" src="./JS/simple-anime.js"></script>
+    <script type="text/javascript" src="./JS/simple-form.js"></script>
     <script type="text/javascript" src="./JS/script.js"></script>
 
   </body>
